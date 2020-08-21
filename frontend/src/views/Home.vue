@@ -32,11 +32,17 @@ export default {
       })
     },
     salvarApresentacao(apresentacao) {
-      if(apresentacao._id == 0)
-        ApresentacaoService.criarApresentacao(apresentacao).then(res => {
+      if(apresentacao._id == 0) {
+        let apresentacaoCriar = {
+        tema: apresentacao.tema,
+        apresentador: apresentacao.apresentador,
+        data: apresentacao.data,
+        }
+        ApresentacaoService.criarApresentacao(apresentacaoCriar).then(res => {
           console.log(res);
           this.carregarApresentacoes();
         });
+      }
       else 
         ApresentacaoService.updateApresentacao(apresentacao).then(res => {
           console.log(res);

@@ -2,7 +2,7 @@
 Implementação de uma poc de um CRUD utilizando Vue JS + Node JS com o banco de dados em MongoDB.
 
 ## Projetos
-Esta divido em duas pastas/projetos:
+Está divido em duas pastas/projetos:
 
 ### Frontend
 Pasta a qual contém o projeto em Vue JS, responsável pelo front-end da aplicação, CRUD.
